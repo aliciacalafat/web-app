@@ -1,0 +1,141 @@
+//<Routes>
+//<Route path="/" element={<Navigate to = "/images" replace={true}/>}/>
+
+//<Route path="/images" element={<PopUpTemplate/>}/>
+
+//<Route path="/images:imageNumber" element={<ImageDetails imageId={parseInt(imageId as string)}/>}/>
+
+//</Routes>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from "react";
+// import { data } from "../gateways/gateways";
+
+// import {
+//     BrowserRouter as 
+//     Router,
+//     Link,
+//     useHistory,
+//     useLocation,
+    
+//   } from "react-router-dom";
+
+// export default function ModalGallery() {
+//     return (
+//         <Router>
+       
+//         </Router>
+//     );
+// }
+
+// function PopUp(){
+//     let location = useLocation();
+//     return(
+//         <div>
+//             {data.map(i => (
+//                 <Link 
+//                     key={i.id} 
+//                     to={{
+//                         pathname: '../components/atoms/images/gallery/${i.id}', 
+//                         state: {background: location}
+//                     }}
+//                 >
+//                     <p>{i.description}</p>
+//                     <p>{i.name}</p>
+//                 </Link>
+//             ))}
+//         </div>
+//     )
+// }
+
+// function ImageView(){
+//     let image = data.filter(datas => (datas.id === data.id));
+
+//     if (!image) return <div>Image not found</div>
+
+//     return(
+//         <div>
+//             <h2>{image.name}</h2>
+//             <p>{image.description}</p>
+//         </div>
+//     )
+
+// }
+
+// function Modal(){
+//     let history = useHistory();
+//     let image = data.filter(datas => (datas.id === data.id));
+//     if (!image) return <div>Image not found</div>
+
+//     let back = e => {
+//         e.stopPropagation();
+//         history.goBack();
+//     }
+
+//     return(
+//         <div onclick={back}
+//             style ={{
+//                 position: "absolute",
+//                 top: 0,
+//                 left: 0,
+//                 bottom: 0,
+//                 right: 0,
+//                 background: "rgba(0, 0, 0, 0.15)"
+//             }}>
+
+//             <div className="modal"
+//                    style={{
+//                     position: "absolute",
+//                     background: "#fff",
+//                     top: 25,
+//                     left: "10%",
+//                     right: "10%",
+//                     padding: 15,
+//                     border: "2px solid #444"
+//                   }}
+//                 >
+//                 <button type="button" onClick={back}>
+//                     Close
+//                 </button>
+//                 <div id="popupBody">
+//                     <h2>{image.name}</h2>
+//                     <a id="Cerrar" href="#">&times;</a>
+//                     <div className="popupContent">
+//                         <p>{image.description}</p>
+//                         <b>Precio: {image.prize}</b>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// }

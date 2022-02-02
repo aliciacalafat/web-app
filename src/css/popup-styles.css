@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.popUp{
+    background: #eeeeee;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    border: 15px solid black;
+    padding: 50px;
+    position: absolute;
+
+    left: 27%;
+    top: 8%;
+}
+
+.popUpImgName{
+    padding-top: 18px;
+    border-top-style: solid;
+    border-top-width:4px;
+    border-color:#fbb710;
+    width:fit-content;
+    margin-bottom: 30px;
+}
+
+#popUpImg{
+    border: 5px solid black;
+    width: fit-content;  
+    width: 400px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.popUpCaption{
+    left:500px;
+    
+}

@@ -1,0 +1,17 @@
+Old:
+
+//import {FC} from 'react';
+//import Template from './template';
+//import Gallery from '../atoms/images/images';
+
+//interface IImageDetails{
+//    imageId:number
+//};
+
+//const ImageDetails: FC <IImageDetails> = (props) =>{
+//    return(
+//        <Gallery/>
+//    );
+//};
+
+//export default ImageDetails;

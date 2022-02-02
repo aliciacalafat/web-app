@@ -1,0 +1,82 @@
+import {FC} from "react";
+import { Gateway } from "../../../gateways/gateways";
+
+const num = new Gateway();
+
+const Gallery: FC = () => {
+    return(
+        <div className="gallery"> 
+            <div className="gallery_column_1">
+                <figure className="gallery_img11">
+                    <div>
+                        <a href="#"><img src={"../../../../public/gallery/1.jpg"} onClick={()=>{console.log(num.getImageDetails(1))}}/></a>
+                        <figcaption className="img11_caption"><p>From $180</p> <h3>Modern Chair</h3></figcaption>  
+                    </div>
+                </figure>
+                
+                <figure className="gallery_img21">
+                    <div>
+                        <a href="#"><img src={"../../../../public/gallery/5.jpg"} onClick={()=>{console.log(num.getImageDetails(2))}}/></a>
+                        <figcaption className="img21_caption"><p>From $18</p><h3>Plant Pot</h3></figcaption>
+                    </div>
+                </figure>
+
+                <figure className="gallery_img31">
+                    <div>
+                        <a href="#"><img src={"../../../../public/gallery/8.jpg"} onClick={()=>{console.log(num.getImageDetails(3))}}/></a>
+                        <figcaption className="img31_caption"><p>From $318 </p><h3>Modern Rocking Chair</h3></figcaption>
+                    </div>
+                </figure>
+            </div>
+            
+            <div className="gallery_column_2">
+                <figure className="gallery_img12">
+                    <div>
+                        <a href="#"><img src={"../../../../public/gallery/2.jpg"} onClick={()=>{console.log(num.getImageDetails(4))}}/></a>
+                        <figcaption className="img12_caption"><p>From $180</p> <h3>Minimalistic Plant Pot</h3></figcaption>
+                    </div>
+                </figure>
+                
+                <figure className="gallery_img22">
+                    <div>
+                        <a href="#"><img src={"../../../../public/gallery/6.jpg"} onClick={()=>{console.log(num.getImageDetails(5))}}/></a>
+                        <figcaption className="img22_caption"><p>From $320</p> <h3>Small Table</h3></figcaption>
+                    </div>
+                </figure>
+
+                <figure className="gallery_img32">
+                    <div>
+                        <a href="#"><img src={"../../../../public/gallery/9.jpg"} onClick={()=>{console.log(num.getImageDetails(6))}}/></a>
+                        <figcaption className="img32_caption"><p>From $318</p> <h3>Home Deco</h3></figcaption>
+                    </div>
+                </figure>
+            </div>
+            
+            <div className="gallery_column_3">
+                <figure className="gallery_img13">
+                    <div>
+                        <a href="#"><img src={"../../../../public/gallery/3.jpg"} onClick={()=>{console.log(num.getImageDetails(7))}}/></a>
+                        <figcaption className="img13_caption"><p>From $180</p> <h3>Modern Chair</h3></figcaption>
+                    </div>
+                </figure>
+                    
+                <figure className="gallery_img23">
+                    <div>
+                        <a href="#"><img src={"../../../../public/gallery/4.jpg"} onClick={()=>{console.log(num.getImageDetails(8))}}/></a>
+                        <figcaption className="img23_caption"><p>From $180 </p><h3>Night Stand</h3></figcaption>
+                    </div>
+                </figure>
+
+                <figure className="gallery_img33">
+                    <div>
+                        <a href="#"><img src={"../../../../public/gallery/7.jpg"} onClick={()=>{console.log(num.getImageDetails(9))}}/></a>
+                        <figcaption className="img33_caption"><p>From $318</p> <h3>Metallic Chair</h3></figcaption>
+                    </div>
+                </figure>
+            </div>
+        </div>
+
+    );
+};
+
+export default Gallery;

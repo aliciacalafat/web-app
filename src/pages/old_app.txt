@@ -1,0 +1,174 @@
+import '../css/styles.css';
+import RouterApp from '../router/router';
+
+function App() {
+
+    return(
+    
+        <RouterApp/>
+        
+   
+    
+     //   <Template>
+    //        <PopUpTemplate/>
+     //   </Template>
+
+    );
+    
+}
+
+export default App;
+
+
+
+
+
+
+
+ // const images: JSX.Element ={
+
+                /*   <div className="container">
+
+                        <nav className="navbar navbar-light bg-light">
+                            
+                            <a className="navbar-brand" href="#">
+                                <img src={require("./bg-img/logo.png")}/>
+                            </a>   
+
+                            <div className="navbar-options">   
+                                <li className="nav-link"></li><a href="#">HOME</a>
+                                <li className="nav-link"></li><a href="#">SHOP</a>
+                                <li className="nav-link"></li><a href="#">PRODUCT</a>
+                                <li className="nav-link"></li><a href="#">CART</a>
+                                <li className="nav-link"></li><a href="#">CHECKOUT</a>    
+                            </div> 
+
+                            <div className="botones">
+                                <button type="button" className="boton1 btn btn-block btn-default btn-lg ">
+                                    %Discount%
+                                </button>
+                                <button type="button" className="boton2 btn btn-block btn-default btn-lg">
+                                    Next this week
+                                </button>
+                            </div>
+
+                            <div className="navbar-logo-options">
+                                <li className="nav-link"></li><a href="#"><i className="fas fa-shopping-cart"></i>  CART(0)</a>
+                                <li className="nav-link"></li><a href="#"><i className="fas fa-star"></i>  FAVOURITE</a>
+                                <li className="nav-link"></li><a href="#"><i className="fas fa-search"></i>  SEARCH</a>
+                            </div>
+
+                            <div className="social_media">
+                                <a href="#"><i className="fab fa-pinterest"></i></a>
+                                <a href="#"><i className="fab fa-instagram"></i></a>
+                                <a href="#"><i className="fab fa-facebook-f"></i></a>
+                                <a href="#"><i className="fab fa-twitter"></i></a>
+                            </div>
+
+                        </nav>
+                        
+                        <div className="gallery_column_1">
+                            <figure className="gallery_img11">
+                                <div>
+                                    <a href="#"><img src={require("./bg-img/1.jpg")}/></a>
+                                    <figcaption className="img11_caption"><p>From $180</p> <h3>Modern Chair</h3></figcaption>  
+                                </div>
+                            </figure>
+                            
+                            <figure className="gallery_img21">
+                                <div>
+                                    <a href="#"><img src={require("./bg-img/5.jpg")}/></a>
+                                    <figcaption className="img21_caption"><p>From $18</p><h3>Plant Pot</h3></figcaption>
+                                </div>
+                            </figure>
+
+                            <figure className="gallery_img31">
+                                <div>
+                                    <a href="#"><img src={require("./bg-img/8.jpg")}/></a>
+                                    <figcaption className="img31_caption"><p>From $318 </p><h3>Modern Rocking Chair</h3></figcaption>
+                                </div>
+                            </figure>
+                        </div>
+                        
+                        <div className="gallery_column_2">
+                            <figure className="gallery_img12">
+                                <div>
+                                    <a href="#"><img src={require("./bg-img/2.jpg")}/></a>
+                                    <figcaption className="img12_caption"><p>From $180</p> <h3>Minimalistic Plant Pot</h3></figcaption>
+                                </div>
+                            </figure>
+                            
+                            <figure className="gallery_img22">
+                                <div>
+                                    <a href="#"><img src={require("./bg-img/6.jpg")}/></a>
+                                    <figcaption className="img22_caption"><p>From $320</p> <h3>Small Table</h3></figcaption>
+                                </div>
+                            </figure>
+
+                            <figure className="gallery_img32">
+                                <div>
+                                    <a href="#"><img src={require("./bg-img/9.jpg")}/></a>
+                                    <figcaption className="img32_caption"><p>From $318</p> <h3>Home Deco</h3></figcaption>
+                                </div>
+                            </figure>
+                        </div>
+                        
+                        <div className="gallery_column_3">
+                            <figure className="gallery_img13">
+                                <div>
+                                    <a href="#"><img src={require("./bg-img/3.jpg")}/></a>
+                                    <figcaption className="img13_caption"><p>From $180</p> <h3>Modern Chair</h3></figcaption>
+                                </div>
+                            </figure>
+                                
+                            <figure className="gallery_img23">
+                                <div>
+                                    <a href="#"><img src={require("./bg-img/4.jpg")}/></a>
+                                    <figcaption className="img23_caption"><p>From $180 </p><h3>Night Stand</h3></figcaption>
+                                </div>
+                            </figure>
+
+                            <figure className="gallery_img33">
+                                <div>
+                                    <a href="#"><img src={require("./bg-img/7.jpg")}/></a>
+                                    <figcaption className="img33_caption"><p>From $318</p> <h3>Metallic Chair</h3></figcaption>
+                                </div>
+                            </figure>
+                        </div>
+                        
+
+                        <div className="sidebar">
+                            <h2>Subscribe for a <p> 25% Discount</p></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam modi voluptas itaque temporibus autem nam? Quo, perferendis veritatis? Numquam necessitatibus tenetur earum quasi eum quod commodi adipisci. Amet, suscipit deleniti?</p>
+                        </div>
+
+                        <footer className="footer">
+                            <div className="footer-container">
+
+                                <div className="footer_column1">
+                                    <a className="navbar-brand" href="#">
+                                        <img src={require("./bg-img/logo.png")}/>
+                                    </a>   
+                                        
+                                    <p>Copyright ©2022 Armado Furniture. All rights reserved.</p>  
+                                </div> 
+                            
+                                <div className="footer_column2">   
+                                    <li className="nav-link"></li><a href="#">HOME</a>
+                                    <li className="nav-link"></li><a href="#">SHOP</a>
+                                    <li className="nav-link"></li><a href="#">PRODUCT</a>
+                                    <li className="nav-link"></li><a href="#">CART</a>
+                                    <li className="nav-link"></li><a href="#">CHECKOUT</a>    
+                                </div> 
+                                
+                                
+                            </div>
+                        </footer>
+                        
+                        <Helmet>
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"/>
+                            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" type="text/javascript"/>
+                        </Helmet>
+                
+                    </div>*/
+     //   );

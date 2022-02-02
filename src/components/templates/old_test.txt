@@ -1,0 +1,54 @@
+import axios from "axios";
+import { FC, useEffect, useState } from "react";
+
+interface User {
+    id: number;
+    firstName: string;
+}
+
+
+
+
+
+
+//const axios = require('axios');
+
+//module.exports = ('https://localhost:3000/employees') => {
+  //  return axios.create(
+    //    {
+      //      return axios.create({
+        //        baseURL: 'https://localhost:3000/employees',
+          //  })
+//        }
+  //  )
+//}
+
+const api =axios.create(
+    {
+    baseURL: 'https://localhost:3000/employees'//'http://127.0.0.1:3000/employees'
+}
+);
+const TestingApi: FC = () => {
+    axios.get<User[]>('https://localhost:3000/employees')
+        .then(response => {
+            console.log(response.data);
+
+        });
+    const [apiResult, setApiResult] = useState('');
+    useEffect(()=>{
+        (async () => {
+            debugger;
+            try{
+            const response = await api.get('https://localhost:3000/employees');
+            console.log(response.data);
+            setApiResult(response.data.toString());
+        }catch(e){
+            console.log('Error')
+            debugger;
+        }
+        })();
+    }, [])
+    return <div>{apiResult}</div>
+}
+
+export default TestingApi;
